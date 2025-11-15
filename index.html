@@ -1,280 +1,217 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KrishiMitra AI - कृषि मित्र AI</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QuickServe IT - Your Trusted IT Partner for All Digital Solutions. Professional computer repair, web development, and IT services at your doorstep.">
+  <meta name="keywords" content="IT services, computer repair, laptop service, web development, digital marketing, data recovery, network setup">
+  <meta name="author" content="QuickServe IT">
+  <title>QuickServe IT - Your Trusted IT Partner</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
 </head>
 <body>
-    <!-- Screen 1: Home Screen -->
-    <div id="home-screen" class="screen active">
-        <header class="app-header">
-            <div class="logo">
-                <span class="logo-icon">🌾</span>
-                <h1>KrishiMitra AI</h1>
-            </div>
-            <p class="subtext">Empowering India's Farmers through Smart Technology</p>
-            <p class="tagline">हर किसान का डिजिटल साथी</p>
-        </header>
-
-        <main class="main-content">
-            <div class="button-grid">
-                <button class="main-button" onclick="navigateTo('weather-screen')">
-                    <span class="button-icon">☁️</span>
-                    <span class="button-text-hi">मौसम की जानकारी</span>
-                    <span class="button-text-en">Weather Updates</span>
-                </button>
-
-                <button class="main-button" onclick="navigateTo('crop-screen')">
-                    <span class="button-icon">🚜</span>
-                    <span class="button-text-hi">फसल सलाहकार</span>
-                    <span class="button-text-en">Crop Advisor</span>
-                </button>
-
-                <button class="main-button" onclick="navigateTo('schemes-screen')">
-                    <span class="button-icon">📄</span>
-                    <span class="button-text-hi">सरकारी योजनाएं</span>
-                    <span class="button-text-en">Govt. Schemes</span>
-                </button>
-
-                <button class="main-button" onclick="navigateTo('help-screen')">
-                    <span class="button-icon">🤖</span>
-                    <span class="button-text-hi">मदद और समर्थन</span>
-                    <span class="button-text-en">Help &amp; Support</span>
-                </button>
-            </div>
-        </main>
-
-        <footer class="app-footer">
-            <p>Made in India 🇮🇳</p>
-        </footer>
-    </div>
-
-    <!-- Screen 2: Weather Updates -->
-    <div id="weather-screen" class="screen">
-        <header class="sub-header">
-            <button class="back-button" onclick="navigateTo('home-screen')">
-                <span>←</span>
-            </button>
-            <h2>Weather Updates</h2>
-        </header>
-
-        <main class="main-content scrollable">
-            <div class="location-card card">
-                <p><strong>Location:</strong> Lucknow, Uttar Pradesh</p>
-            </div>
-
-            <div class="weather-card card">
-                <div class="temp-large">32°C</div>
-                <div class="weather-status">बादल छाए रहेंगे</div>
-                <div class="weather-details">
-                    <span>Humidity: 70%</span>
-                    <span class="separator">|</span>
-                    <span>Rain: 20% Chance</span>
-                </div>
-            </div>
-
-            <div class="alert-card card">
-                <div class="alert-header">
-                    <span class="alert-icon">⚠️</span>
-                    <strong>Alert</strong>
-                </div>
-                <p class="alert-text-en">Heavy rain expected in 2 days — take crop protection measures.</p>
-                <p class="alert-text-hi">अगले २ दिनों में भारी बारिश की उम्मीद है - फसल सुरक्षा के उपाय करें।</p>
-            </div>
-
-            <div class="forecast-card card">
-                <h3>5-Day Forecast</h3>
-                <div class="forecast-grid">
-                    <div class="forecast-item">
-                        <div class="forecast-day">Mon</div>
-                        <div class="forecast-icon">☀️</div>
-                        <div class="forecast-temp">33°C</div>
-                        <div class="forecast-condition">Sunny</div>
-                    </div>
-                    <div class="forecast-item">
-                        <div class="forecast-day">Tue</div>
-                        <div class="forecast-icon">🌧️</div>
-                        <div class="forecast-temp">31°C</div>
-                        <div class="forecast-condition">Rain</div>
-                    </div>
-                    <div class="forecast-item">
-                        <div class="forecast-day">Wed</div>
-                        <div class="forecast-icon">☁️</div>
-                        <div class="forecast-temp">32°C</div>
-                        <div class="forecast-condition">Cloudy</div>
-                    </div>
-                    <div class="forecast-item">
-                        <div class="forecast-day">Thu</div>
-                        <div class="forecast-icon">☁️</div>
-                        <div class="forecast-temp">30°C</div>
-                        <div class="forecast-condition">Cloudy</div>
-                    </div>
-                    <div class="forecast-item">
-                        <div class="forecast-day">Fri</div>
-                        <div class="forecast-icon">☀️</div>
-                        <div class="forecast-temp">34°C</div>
-                        <div class="forecast-condition">Sunny</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Screen 3: Crop Advisor -->
-    <div id="crop-screen" class="screen">
-        <header class="sub-header">
-            <button class="back-button" onclick="navigateTo('home-screen')">
-                <span>←</span>
-            </button>
-            <h2>Crop Advisor</h2>
-        </header>
-
-        <div class="tabs">
-            <button class="tab-button active" onclick="switchTab('crop', 'suggestions')">
-                Crop Suggestions
-            </button>
-            <button class="tab-button" onclick="switchTab('crop', 'fertilizer')">
-                Fertilizer Suggestion
-            </button>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="status-chip">
+          <span class="status-dot online"></span>
+          <span class="status-text" data-i18n="status.online">We're Online</span>
         </div>
-
-        <main class="main-content scrollable" id="crop-suggestions">
-            <div class="section-header">
-                <h3>Recommended Crops for Rabi Season (Lucknow Region)</h3>
-            </div>
-
-            <div class="crop-card card">
-                <div class="crop-icon">🌾</div>
-                <div class="crop-content">
-                    <h4>Wheat (गेहूँ)</h4>
-                    <p>High-yield, suitable for your region's soil. Low-to-moderate water needed.</p>
-                </div>
-            </div>
-
-            <div class="crop-card card">
-                <div class="crop-icon">🌿</div>
-                <div class="crop-content">
-                    <h4>Mustard (सरसों)</h4>
-                    <p>Good cash crop for this season. Resilient to local pests.</p>
-                </div>
-            </div>
-
-            <div class="crop-card card">
-                <div class="crop-icon">🫘</div>
-                <div class="crop-content">
-                    <h4>Gram (चना)</h4>
-                    <p>Requires less water and improves soil nitrogen.</p>
-                </div>
-            </div>
-        </main>
-
-        <main class="main-content scrollable hidden" id="crop-fertilizer">
-            <div class="section-header">
-                <h3>Fertilizer Recommendations</h3>
-            </div>
-            <div class="info-card card">
-                <p>Fertilizer suggestions will be available based on your soil test results and selected crop.</p>
-            </div>
-        </main>
-    </div>
-
-    <!-- Screen 4: Govt. Schemes -->
-    <div id="schemes-screen" class="screen">
-        <header class="sub-header">
-            <button class="back-button" onclick="navigateTo('home-screen')">
-                <span>←</span>
-            </button>
-            <h2>Govt. Schemes (सरकारी योजनाएं)</h2>
-        </header>
-
-        <main class="main-content scrollable">
-            <div class="section-header">
-                <h3>Active schemes for farmers in your state.</h3>
-            </div>
-
-            <div class="scheme-card card">
-                <h4>PM-KISAN (प्रधानमंत्री किसान सम्मान निधि)</h4>
-                <p class="scheme-text-hi">हर किसान को ₹6,000 वार्षिक सहायता।</p>
-                <p class="scheme-text-en">₹6,000 annual support for every farmer.</p>
-                <button class="action-button">Apply Now</button>
-            </div>
-
-            <div class="scheme-card card">
-                <h4>Kisan Credit Card (किसान क्रेडिट कार्ड)</h4>
-                <p class="scheme-text-hi">खेती के लिए कम ब्याज दर पर ऋण।</p>
-                <p class="scheme-text-en">Low-interest loans for agricultural needs.</p>
-                <button class="action-button">Apply Now</button>
-            </div>
-
-            <div class="scheme-card card">
-                <h4>PM Fasal Bima Yojana (प्रधानमंत्री फसल बीमा योजना)</h4>
-                <p class="scheme-text-hi">फसल के नुकसान के लिए बीमा कवरेज।</p>
-                <p class="scheme-text-en">Insurance coverage for crop damage.</p>
-                <button class="action-button">Apply Now</button>
-            </div>
-
-            <div class="scheme-card card">
-                <h4>Soil Health Card Scheme (मृदा स्वास्थ्य कार्ड)</h4>
-                <p class="scheme-text-hi">अपनी मिट्टी के स्वास्थ्य और उर्वरता को जानें।</p>
-                <p class="scheme-text-en">Know your soil's health and fertility.</p>
-                <button class="action-button">Know More</button>
-            </div>
-        </main>
-    </div>
-
-    <!-- Screen 5: Help & Support -->
-    <div id="help-screen" class="screen">
-        <header class="sub-header">
-            <button class="back-button" onclick="navigateTo('home-screen')">
-                <span>←</span>
-            </button>
-            <h2>Help &amp; Support</h2>
-        </header>
-
-        <div class="tabs">
-            <button class="tab-button active" onclick="switchTab('help', 'bot')">
-                KrishiMitra Bot
-            </button>
-            <button class="tab-button" onclick="switchTab('help', 'helplines')">
-                Emergency Helplines
-            </button>
+        
+        <h1 class="hero-greeting">Good Morning</h1>
+        
+        <h2 class="hero-title" data-i18n="hero.title">Welcome to QuickServe IT</h2>
+        
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Your Trusted IT Partner for All Digital Solutions</p>
+        
+        <div class="typewriter-container">
+          <p class="typewriter-text"></p>
+          <span class="cursor"></span>
         </div>
-
-        <main class="main-content scrollable" id="help-bot">
-            <div class="chat-container">
-                <div class="chat-message bot-message">
-                    <p>नमस्ते! मैं कृषि मित्र AI हूँ। आप क्या जानना चाहते हैं?</p>
-                </div>
-                <div class="chat-message user-message">
-                    <p>Kis fasal ko ab ugana chahiye?</p>
-                </div>
-                <div class="chat-message bot-message">
-                    <p>इस समय आपके क्षेत्र के लिए गेहूँ और सरसों उपयुक्त हैं। अधिक जानकारी के लिए 'फसल सलाहकार' देखें।</p>
-                </div>
-            </div>
-            <div class="chat-input-bar">
-                <input type="text" placeholder="Type your message in Hindi..." disabled>
-                <button class="mic-button">🎤</button>
-            </div>
-        </main>
-
-        <main class="main-content scrollable hidden" id="help-helplines">
-            <div class="section-header">
-                <h3>Emergency Helplines</h3>
-            </div>
-            <div class="helpline-card card">
-                <h4>Kisan Call Center</h4>
-                <p class="helpline-number">📞 1800-180-1551</p>
-            </div>
-            <div class="helpline-card card">
-                <h4>Local Mandi Office</h4>
-                <p class="helpline-number">📞 0522-223344</p>
-            </div>
-        </main>
+        
+        <div class="hero-cta">
+          <a href="/pages/contact.html" class="btn btn-primary" data-i18n="hero.cta">Get Started</a>
+          <a href="/pages/about.html" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Learn More</a>
+        </div>
+      </div>
     </div>
-
-    <script src="app.js"></script>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title text-gradient" data-i18n="services.title">Our Services</h2>
+      <p class="section-subtitle" data-i18n="services.subtitle">Comprehensive IT Solutions for Every Need</p>
+      
+      <div class="grid grid-4">
+        <div class="card service-card">
+          <span class="service-icon">💻</span>
+          <h3>Computer Repair</h3>
+          <p>Expert diagnosis and repair for all computer issues</p>
+          <a href="/pages/services/computer-repair.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">🖥️</span>
+          <h3>Laptop Service</h3>
+          <p>Professional laptop maintenance and repair</p>
+          <a href="/pages/services/laptop-service.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">💾</span>
+          <h3>Data Recovery</h3>
+          <p>Recover lost data from any storage device</p>
+          <a href="/pages/services/data-recovery.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">🌐</span>
+          <h3>Network Setup</h3>
+          <p>Complete network installation and configuration</p>
+          <a href="/pages/services/network-setup.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">📦</span>
+          <h3>Software Installation</h3>
+          <p>Install and configure any software</p>
+          <a href="/pages/services/software-installation.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">🛡️</span>
+          <h3>Virus Removal</h3>
+          <p>Complete malware and virus removal</p>
+          <a href="/pages/services/virus-removal.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">🌟</span>
+          <h3>Web Development</h3>
+          <p>Custom website design and development</p>
+          <a href="/pages/services/web-development.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+        
+        <div class="card service-card">
+          <span class="service-icon">📱</span>
+          <h3>Digital Marketing</h3>
+          <p>SEO, social media, and online marketing</p>
+          <a href="/pages/services/digital-marketing.html" class="btn btn-secondary mt-2">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Comparison Section -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <h2 class="section-title text-gradient" data-i18n="comparison.title">Why Choose QuickServe IT?</h2>
+      <p class="section-subtitle" data-i18n="comparison.subtitle">See How We're Different from Traditional Cyber Cafés</p>
+      
+      <div class="comparison-container">
+        <div class="comparison-card">
+          <h3>🏪 Traditional Cyber Café</h3>
+          <ul class="comparison-list">
+            <li>Limited services</li>
+            <li>Fixed location only</li>
+            <li>Basic technical knowledge</li>
+            <li>No warranty</li>
+            <li>Crowded environment</li>
+            <li>Limited working hours</li>
+          </ul>
+        </div>
+        
+        <div class="comparison-card highlight">
+          <h3>⚡ QuickServe IT</h3>
+          <ul class="comparison-list">
+            <li>Complete IT solutions</li>
+            <li>Doorstep service available</li>
+            <li>Expert certified technicians</li>
+            <li>Service warranty included</li>
+            <li>Professional environment</li>
+            <li>Flexible timing & 24/7 support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title text-gradient" data-i18n="testimonials.title">What Our Clients Say</h2>
+      <p class="section-subtitle" data-i18n="testimonials.subtitle">Real feedback from real customers</p>
+      
+      <div class="grid grid-3">
+        <div class="card testimonial-card">
+          <p class="testimonial-text">"QuickServe IT saved my business! They recovered all my important data when my hard drive crashed. Highly professional service!"</p>
+          <p class="testimonial-author">Rajesh Kumar</p>
+          <p class="testimonial-role">Business Owner</p>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="card testimonial-card">
+          <p class="testimonial-text">"Best IT service I've ever used. They came to my home, fixed my laptop in 2 hours, and the price was very reasonable."</p>
+          <p class="testimonial-author">Priya Sharma</p>
+          <p class="testimonial-role">Freelancer</p>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+        
+        <div class="card testimonial-card">
+          <p class="testimonial-text">"Amazing service! They helped me set up my new computer and installed all the software I needed. Very patient and helpful."</p>
+          <p class="testimonial-author">Amit Patel</p>
+          <p class="testimonial-role">Student</p>
+          <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));">
+    <div class="container text-center">
+      <h2 class="text-gradient">Ready to Get Started?</h2>
+      <p class="section-subtitle">Contact us today for a free consultation and quote</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+        <a href="/pages/contact.html" class="btn btn-primary">Contact Us Now</a>
+        <a href="/pages/more/pricing.html" class="btn btn-secondary">View Pricing</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  
+  <!-- Scripts -->
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // Load header and footer
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        // Reinitialize navigation after header is loaded
+        if (window.QuickServeIT) {
+          initNavigation();
+        }
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional data recovery from hard drives, SSDs, USB drives, and memory cards. Recover your lost files safely.">
+  <title>Data Recovery Services - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      
+      
+      <div class="section">
+        <h1 class="text-gradient">💾 Data Recovery Services</h1>
+        <p class="section-subtitle">Recover Your Lost Data Safely and Securely</p>
+        
+        <div class="card mt-4">
+          <h2>We Recover Data From:</h2>
+          <div class="grid grid-4 mt-2">
+            <div class="text-center"><h3>💽</h3><p>Hard Drives</p></div>
+            <div class="text-center"><h3>💿</h3><p>SSDs</p></div>
+            <div class="text-center"><h3>📱</h3><p>Mobile Phones</p></div>
+            <div class="text-center"><h3>💾</h3><p>USB Drives</p></div>
+            <div class="text-center"><h3>📷</h3><p>Memory Cards</p></div>
+            <div class="text-center"><h3>💻</h3><p>Laptops</p></div>
+            <div class="text-center"><h3>🖥️</h3><p>Desktops</p></div>
+            <div class="text-center"><h3>☁️</h3><p>Cloud Storage</p></div>
+          </div>
+        </div>
+        
+        <div class="grid grid-2 mt-4">
+          <div class="card">
+            <h3>Common Data Loss Scenarios</h3>
+            <p>🗑️ Accidental Deletion</p>
+            <p>💥 Hard Drive Crash</p>
+            <p>🦠 Virus Attack</p>
+            <p>⚡ Power Failure</p>
+            <p>🔥 Physical Damage</p>
+            <p>💧 Water Damage</p>
+            <p>🔄 Formatting Error</p>
+            <p>🚫 Corrupted Files</p>
+          </div>
+          
+          <div class="card">
+            <h3>Our Recovery Process</h3>
+            <p>1️⃣ Free Evaluation</p>
+            <p>2️⃣ Diagnosis & Quote</p>
+            <p>3️⃣ Data Recovery</p>
+            <p>4️⃣ Verification</p>
+            <p>5️⃣ Secure Delivery</p>
+            <p class="mt-3 text-gold">✅ No Data, No Charge Policy</p>
+            <p class="text-gold">✅ 100% Confidential</p>
+            <a href="/pages/contact.html" class="btn btn-primary mt-3" style="width: 100%;">Get Free Evaluation</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

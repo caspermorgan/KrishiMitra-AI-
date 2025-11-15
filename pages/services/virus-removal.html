@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete virus removal, malware cleaning, and system security services. Protect your computer from threats.">
+  <title>Virus & Malware Removal - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      
+      
+      <div class="section">
+        <h1 class="text-gradient">🛡️ Virus & Malware Removal</h1>
+        <p class="section-subtitle">Complete Protection Against Digital Threats</p>
+        
+        <div class="card mt-4">
+          <h2>Signs Your Computer is Infected</h2>
+          <div class="grid grid-3 mt-2">
+            <p>🐌 Slow Performance</p>
+            <p>🚨 Pop-up Ads</p>
+            <p>🔄 Unexpected Restarts</p>
+            <p>📧 Spam Emails Sent</p>
+            <p>🔒 Files Encrypted</p>
+            <p>🌐 Browser Redirects</p>
+            <p>💾 Disk Space Issues</p>
+            <p>🔇 Programs Not Working</p>
+            <p>🚫 Antivirus Disabled</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-2 mt-4">
+          <div class="card">
+            <h3>Our Removal Process</h3>
+            <p>1️⃣ System Scan & Analysis</p>
+            <p>2️⃣ Threat Identification</p>
+            <p>3️⃣ Virus Removal</p>
+            <p>4️⃣ System Cleaning</p>
+            <p>5️⃣ Security Setup</p>
+            <p>6️⃣ Prevention Tips</p>
+          </div>
+          
+          <div class="card">
+            <h3>We Remove:</h3>
+            <p>🦠 Viruses</p>
+            <p>🐛 Worms</p>
+            <p>🐴 Trojans</p>
+            <p>🕵️ Spyware</p>
+            <p>📢 Adware</p>
+            <p>🔒 Ransomware</p>
+            <p>🎣 Phishing Threats</p>
+            <p>🤖 Rootkits</p>
+          </div>
+        </div>
+        
+        <div class="card mt-4 text-center">
+          <h2>Complete Virus Removal</h2>
+          <p class="text-gold">Starting from ₹499</p>
+          <p>✅ Same Day Service | ✅ Data Protection | ✅ Prevention Setup</p>
+          <a href="/pages/contact.html" class="btn btn-primary mt-2">Get Help Now</a>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

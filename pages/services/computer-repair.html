@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional computer repair services. Expert diagnosis and repair for all computer issues at affordable prices.">
+  <title>Computer Repair Services - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      <div class="section">
+        <h1 class="text-gradient">💻 Computer Repair Services</h1>
+        <p class="section-subtitle">Expert Diagnosis and Repair for All Computer Issues</p>
+        
+        <div class="grid grid-2 mt-4">
+          <div>
+            <h2>Our Computer Repair Services</h2>
+            <ul style="list-style: none; padding: 0;">
+              <li class="card mb-1">🔧 Hardware Diagnostics & Repair</li>
+              <li class="card mb-1">💾 Hard Drive Replacement & Upgrade</li>
+              <li class="card mb-1">🎮 Graphics Card Installation</li>
+              <li class="card mb-1">⚡ Power Supply Replacement</li>
+              <li class="card mb-1">🌡️ Overheating Issues Resolution</li>
+              <li class="card mb-1">🔊 Audio/Video Problems</li>
+              <li class="card mb-1">⌨️ Keyboard & Mouse Issues</li>
+              <li class="card mb-1">🖥️ Monitor Display Problems</li>
+            </ul>
+          </div>
+          
+          <div class="card">
+            <h3 class="text-gold">Why Choose Us?</h3>
+            <p>✅ Certified Technicians</p>
+            <p>✅ Same-Day Service Available</p>
+            <p>✅ 90-Day Warranty on Repairs</p>
+            <p>✅ Free Diagnostics</p>
+            <p>✅ Transparent Pricing</p>
+            <p>✅ Doorstep Service</p>
+            <p>✅ Quality Parts & Components</p>
+            <p>✅ Data Protection Guaranteed</p>
+            
+            <div class="mt-3">
+              <h4 class="text-gold">Starting from ₹499</h4>
+              <a href="/pages/contact.html" class="btn btn-primary mt-2" style="width: 100%;">Book Service Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mt-4">
+          <h2>Common Computer Problems We Fix</h2>
+          <div class="grid grid-3 mt-2">
+            <div>
+              <h4>🚫 Won't Turn On</h4>
+              <p>Power supply issues, motherboard problems, or hardware failures</p>
+            </div>
+            <div>
+              <h4>🐌 Running Slow</h4>
+              <p>Performance optimization, RAM upgrades, SSD installation</p>
+            </div>
+            <div>
+              <h4>🔵 Blue Screen Errors</h4>
+              <p>System crashes, driver issues, hardware conflicts</p>
+            </div>
+            <div>
+              <h4>🔇 No Sound</h4>
+              <p>Audio driver problems, speaker issues, sound card repair</p>
+            </div>
+            <div>
+              <h4>🌐 No Internet</h4>
+              <p>Network adapter issues, WiFi problems, connectivity fixes</p>
+            </div>
+            <div>
+              <h4>🔥 Overheating</h4>
+              <p>Cooling system cleaning, thermal paste replacement, fan repair</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-4">
+          <h2>Need Computer Repair?</h2>
+          <p>Contact us today for a free consultation and quote</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="/pages/contact.html" class="btn btn-primary">Contact Us</a>
+            <a href="/pages/services.html" class="btn btn-secondary">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

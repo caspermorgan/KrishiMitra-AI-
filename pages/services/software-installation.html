@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional software installation, OS setup, application configuration, and software troubleshooting.">
+  <title>Software Installation & Configuration - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      
+      
+      <div class="section">
+        <h1 class="text-gradient">📦 Software Installation & Configuration</h1>
+        <p class="section-subtitle">Expert Software Setup and Configuration Services</p>
+        
+        <div class="grid grid-2 mt-4">
+          <div class="card">
+            <h3>Operating Systems</h3>
+            <p>🪟 Windows Installation</p>
+            <p>🍎 macOS Setup</p>
+            <p>🐧 Linux Installation</p>
+            <p>🔄 OS Upgrades</p>
+            <p>⚙️ Driver Installation</p>
+          </div>
+          
+          <div class="card">
+            <h3>Business Software</h3>
+            <p>📊 Microsoft Office</p>
+            <p>💼 Accounting Software</p>
+            <p>🎨 Adobe Creative Suite</p>
+            <p>📧 Email Clients</p>
+            <p>☁️ Cloud Applications</p>
+          </div>
+        </div>
+        
+        <div class="card mt-4">
+          <h3>We Install & Configure:</h3>
+          <div class="grid grid-4 mt-2">
+            <p>✅ Antivirus Software</p>
+            <p>✅ Productivity Tools</p>
+            <p>✅ Design Software</p>
+            <p>✅ Development Tools</p>
+            <p>✅ Media Players</p>
+            <p>✅ Browsers</p>
+            <p>✅ Backup Software</p>
+            <p>✅ Custom Applications</p>
+          </div>
+          <div class="text-center mt-3">
+            <h4 class="text-gold">Starting from ₹299</h4>
+            <a href="/pages/contact.html" class="btn btn-primary mt-2">Book Service</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

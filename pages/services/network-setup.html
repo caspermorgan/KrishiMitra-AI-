@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional network installation, WiFi setup, router configuration, and network security services.">
+  <title>Network Setup & Configuration - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      
+      
+      <div class="section">
+        <h1 class="text-gradient">🌐 Network Setup & Configuration</h1>
+        <p class="section-subtitle">Complete Network Solutions for Home and Office</p>
+        
+        <div class="grid grid-3 mt-4">
+          <div class="card">
+            <h3>🏠 Home Network</h3>
+            <p>WiFi Router Setup</p>
+            <p>Range Extenders</p>
+            <p>Smart Home Integration</p>
+            <p>Parental Controls</p>
+            <p>Guest Network Setup</p>
+          </div>
+          
+          <div class="card">
+            <h3>🏢 Office Network</h3>
+            <p>LAN/WAN Setup</p>
+            <p>Server Configuration</p>
+            <p>Network Security</p>
+            <p>VPN Setup</p>
+            <p>Firewall Configuration</p>
+          </div>
+          
+          <div class="card">
+            <h3>🔒 Security</h3>
+            <p>Network Encryption</p>
+            <p>Access Control</p>
+            <p>Intrusion Detection</p>
+            <p>Security Audits</p>
+            <p>Monitoring Setup</p>
+          </div>
+        </div>
+        
+        <div class="card mt-4 text-center">
+          <h2>Professional Network Installation</h2>
+          <p>Starting from ₹999</p>
+          <a href="/pages/contact.html" class="btn btn-primary mt-2">Request Quote</a>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

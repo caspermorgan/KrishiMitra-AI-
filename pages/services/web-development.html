@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Custom website design and development. Responsive, modern, and SEO-friendly websites for your business.">
+  <title>Web Development Services - QuickServe IT</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main style="margin-top: 100px; min-height: 70vh;">
+    <div class="container">
+      
+      
+      <div class="section">
+        <h1 class="text-gradient">🌟 Web Development Services</h1>
+        <p class="section-subtitle">Custom Websites That Drive Results</p>
+        
+        <div class="grid grid-3 mt-4">
+          <div class="card">
+            <h3>🎨 Design</h3>
+            <p>Modern UI/UX</p>
+            <p>Responsive Design</p>
+            <p>Brand Identity</p>
+            <p>Custom Graphics</p>
+            <p>User-Friendly</p>
+          </div>
+          
+          <div class="card">
+            <h3>💻 Development</h3>
+            <p>HTML/CSS/JS</p>
+            <p>React/Vue/Angular</p>
+            <p>WordPress/CMS</p>
+            <p>E-commerce</p>
+            <p>Custom Solutions</p>
+          </div>
+          
+          <div class="card">
+            <h3>🚀 Features</h3>
+            <p>Fast Loading</p>
+            <p>SEO Optimized</p>
+            <p>Mobile Friendly</p>
+            <p>Secure</p>
+            <p>Scalable</p>
+          </div>
+        </div>
+        
+        <div class="card mt-4">
+          <h2>Website Packages</h2>
+          <div class="grid grid-3 mt-2">
+            <div class="text-center">
+              <h3 class="text-gold">Basic</h3>
+              <h4>₹9,999</h4>
+              <p>5 Pages</p>
+              <p>Responsive Design</p>
+              <p>Contact Form</p>
+              <p>1 Year Support</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-gold">Professional</h3>
+              <h4>₹24,999</h4>
+              <p>10 Pages</p>
+              <p>CMS Integration</p>
+              <p>SEO Setup</p>
+              <p>2 Years Support</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-gold">Enterprise</h3>
+              <h4>₹49,999+</h4>
+              <p>Unlimited Pages</p>
+              <p>Custom Features</p>
+              <p>Advanced SEO</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <a href="/pages/contact/quote.html" class="btn btn-primary">Get Custom Quote</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  
+  <script src="/assets/js/main.js"></script>
+  <script>
+    fetch('/components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        if (window.QuickServeIT) initNavigation();
+      });
+    
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "more": "More"
+  },
+  "hero": {
+    "greeting": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening",
+      "night": "Good Night"
+    },
+    "title": "Welcome to QuickServe IT",
+    "subtitle": "Your Trusted IT Partner for All Digital Solutions",
+    "typewriter": [
+      "We provide professional IT services at your doorstep",
+      "Expert computer repair and maintenance solutions",
+      "Fast, reliable, and affordable tech support",
+      "Custom software development for your business",
+      "Network setup and security solutions",
+      "Data recovery and backup services",
+      "Website design and digital marketing",
+      "Hardware upgrades and installations",
+      "Remote IT support available 24/7",
+      "Trusted by 1000+ satisfied customers"
+    ],
+    "cta": "Get Started",
+    "ctaSecondary": "Learn More"
+  },
+  "status": {
+    "online": "We're Online",
+    "offline": "Currently Offline",
+    "hours": "Working Hours"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive IT Solutions for Every Need",
+    "list": [
+      {
+        "id": "computer-repair",
+        "name": "Computer Repair",
+        "description": "Expert diagnosis and repair for all computer issues",
+        "icon": "💻"
+      },
+      {
+        "id": "laptop-service",
+        "name": "Laptop Service",
+        "description": "Professional laptop maintenance and repair",
+        "icon": "🖥️"
+      },
+      {
+        "id": "data-recovery",
+        "name": "Data Recovery",
+        "description": "Recover lost data from any storage device",
+        "icon": "💾"
+      },
+      {
+        "id": "network-setup",
+        "name": "Network Setup",
+        "description": "Complete network installation and configuration",
+        "icon": "🌐"
+      },
+      {
+        "id": "software-installation",
+        "name": "Software Installation",
+        "description": "Install and configure any software",
+        "icon": "📦"
+      },
+      {
+        "id": "virus-removal",
+        "name": "Virus Removal",
+        "description": "Complete malware and virus removal",
+        "icon": "🛡️"
+      },
+      {
+        "id": "web-development",
+        "name": "Web Development",
+        "description": "Custom website design and development",
+        "icon": "🌟"
+      },
+      {
+        "id": "digital-marketing",
+        "name": "Digital Marketing",
+        "description": "SEO, social media, and online marketing",
+        "icon": "📱"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Why Choose QuickServe IT?",
+    "subtitle": "See How We're Different from Traditional Cyber Cafés",
+    "cybercafe": {
+      "title": "Traditional Cyber Café",
+      "points": [
+        "Limited services",
+        "Fixed location only",
+        "Basic technical knowledge",
+        "No warranty",
+        "Crowded environment",
+        "Limited working hours"
+      ]
+    },
+    "quickserve": {
+      "title": "QuickServe IT",
+      "points": [
+        "Complete IT solutions",
+        "Doorstep service available",
+        "Expert certified technicians",
+        "Service warranty included",
+        "Professional environment",
+        "Flexible timing & 24/7 support"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real feedback from real customers",
+    "list": [
+      {
+        "name": "Rajesh Kumar",
+        "role": "Business Owner",
+        "text": "QuickServe IT saved my business! They recovered all my important data when my hard drive crashed. Highly professional service!",
+        "rating": 5
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "Freelancer",
+        "text": "Best IT service I've ever used. They came to my home, fixed my laptop in 2 hours, and the price was very reasonable.",
+        "rating": 5
+      },
+      {
+        "name": "Amit Patel",
+        "role": "Student",
+        "text": "Amazing service! They helped me set up my new computer and installed all the software I needed. Very patient and helpful.",
+        "rating": 5
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "title": "About QuickServe IT",
+      "text": "We are your trusted IT partner, providing professional technology solutions at affordable prices. With expert technicians and quality service, we ensure your digital life runs smoothly."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "text": "Home", "url": "/index.html" },
+        { "text": "Services", "url": "/pages/services.html" },
+        { "text": "About Us", "url": "/pages/about.html" },
+        { "text": "Portfolio", "url": "/pages/portfolio.html" },
+        { "text": "Contact", "url": "/pages/contact.html" }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "links": [
+        { "text": "Computer Repair", "url": "/pages/services/computer-repair.html" },
+        { "text": "Laptop Service", "url": "/pages/services/laptop-service.html" },
+        { "text": "Data Recovery", "url": "/pages/services/data-recovery.html" },
+        { "text": "Network Setup", "url": "/pages/services/network-setup.html" },
+        { "text": "Web Development", "url": "/pages/services/web-development.html" }
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "links": [
+        { "text": "Privacy Policy", "url": "/pages/legal/privacy.html" },
+        { "text": "Terms of Service", "url": "/pages/legal/terms.html" },
+        { "text": "Refund Policy", "url": "/pages/legal/refund.html" }
+      ]
+    },
+    "pricing": "Affordable IT Solutions Starting from ₹499",
+    "referral": "Refer & Earn ₹500 on Every Successful Referral!",
+    "comingSoon": "Mobile App Coming Soon - Stay Tuned!",
+    "copyright": "© 2025 QuickServe IT. All rights reserved."
+  }
+}
